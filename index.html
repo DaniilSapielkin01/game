@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Canvas</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="info-canvas">
+          <div class="btn">
+            <button id="btn-start">Start</button>
+            <button id="btn-stop">Stop</button>
+          </div>
+          <div class="points">
+            <h3 class="point-score">Score: <span id="score"> 0</span></h3>
+            <h3 class="point-lose">Lose: <span id="lose">0</span></h3>
+          </div>
+        </div>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <h1 id="result" class="result"></h1>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

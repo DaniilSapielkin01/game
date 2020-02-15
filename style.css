@@ -1,0 +1,58 @@
+.container {
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+}
+
+.info-canvas {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 17px;
+}
+
+#canvas {
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* button */
+button:active,
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: bisque;
+    transition: all .3s ease;
+}
+
+.info-canvas .btn {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.btn #btn-start,
+#btn-stop {
+    height: 35px;
+    width: 80px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* --- */
+
+.points {
+    display: flex;
+    align-items: center;
+}
+
+.points .point-score,
+.point-lose {
+    margin: 0 10px;
+
+}
