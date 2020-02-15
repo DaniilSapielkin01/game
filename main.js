@@ -41,7 +41,7 @@ let clickArea = (document.getElementById("canvas").onclick = function(event) {
       event.clientY - canvas.offsetTop < MassRect[i].y + 30 &&
       event.clientY - canvas.offsetTop > MassRect[i].y
     ) {
-      MassRect[i].y = 500;
+      MassRect[i].y = 600;
       cheked++;
       pointScore.innerText = cheked;
     }
@@ -54,12 +54,12 @@ let resultGame = document.getElementById("result");
 
 class Rect {
   constructor() {
-    this.x = Math.round(Math.random() * 500);
+    this.x = Math.round(Math.random() * 480);
     this.y = 0;
     this.w = 20;
     this.h = 20;
     this.color = colors[Math.round(Math.random() * colors.length)];
-    this.speedRect = Math.round(Math.random() * 2 + 0.5);
+    this.speedRect = Math.round(Math.random() * 5 + 0.5);
   }
   Draw(ctx) {
     ctx.beginPath();
@@ -82,9 +82,9 @@ let moveRect = function() {
 
 let deleteRect = function() {
   for (let i = 0; i < MassRect.length; i++) {
-    if (MassRect[i].y >= 529) {
+    if (MassRect[i].y >= 480) {
       // debugger;
-      if (MassRect[i].y <= 530) {
+      if (MassRect[i].y < 560 ) {
         // debugger;
         outGame++;
         pointLose.innerText = outGame;
